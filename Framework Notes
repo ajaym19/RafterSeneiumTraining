@@ -1,0 +1,43 @@
+Framework Notes
+
+Types:
+1. TDD >> Test Driven Development
+2. BDD >> Behavior Driven Development
+
+Design Pattern
+POM: Page Object Model
+
+Integrations:
+Selenium
+Java
+Webdrivermanager
+TestNG
+Maven
+ApachePOI
+Extent Report
+Git
+Jenkins
+
+Project Folders
+
+Naming Convention
+package: reverse the domain name
+class: Student, Employee
+variables: studentId, empEmailAddress>> camel case
+Methods: same as variables
+
+TestCase
+	knows what we are testing
+	knows what are the steps
+	but how to perform these steps is not known to TC
+	knows what is the expected OP
+	knows how to compare the results and mark the TC
+Code
+	will perform the steps
+	return the actual result
+	
+
+
+
+
+
