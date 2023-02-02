@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.rafter.testcases.DashboardPageTest">
+      <class name="com.rafter.testcases.LoginPageTest">
         <methods>
-          <include name="dashboardLabel"/>
+          <include name="validateLoginTest"/>
+          <include name="closeBrowserSetup"/>
           <include name="browserConfig"/>
         </methods>
-      </class> <!-- com.rafter.testcases.DashboardPageTest -->
+      </class> <!-- com.rafter.testcases.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

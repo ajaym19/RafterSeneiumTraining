@@ -6,10 +6,11 @@ import com.rafter.base.RafterBase;
 
 public class LoginPage extends RafterBase {
 	
-	public void login() {
-		driver.findElement(By.name("username")).sendKeys("Admin");
-		driver.findElement(By.name("password")).sendKeys("admin123");
+	public DashboardPage login() {
+		driver.findElement(By.name("username")).sendKeys(prop.getProperty("uname"));
+		driver.findElement(By.name("password")).sendKeys(prop.getProperty("password"));
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
+		return new DashboardPage();
 	}
 	
 	public String getPageTitle() {

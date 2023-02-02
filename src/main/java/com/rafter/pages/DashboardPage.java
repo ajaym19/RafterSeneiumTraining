@@ -9,4 +9,7 @@ public class DashboardPage extends RafterBase{
 	public boolean getDashboardLabelPresence() {
 		return driver.findElement(By.xpath("//h6[text()='Dashboard']")).isDisplayed();
 	}
+	
+	//properties
+	
 }

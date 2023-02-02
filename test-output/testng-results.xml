@@ -1,91 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-01T11:48:29 IST" name="Default suite" finished-at="2023-02-01T11:48:58 IST" duration-ms="28926">
+  <suite started-at="2023-02-02T13:35:31 IST" name="Suite" finished-at="2023-02-02T13:36:48 IST" duration-ms="76898">
     <groups>
     </groups>
-    <test started-at="2023-02-01T11:48:29 IST" name="Default test" finished-at="2023-02-01T11:48:58 IST" duration-ms="28926">
+    <test started-at="2023-02-02T13:35:31 IST" name="Test" finished-at="2023-02-02T13:36:48 IST" duration-ms="76898">
       <class name="com.rafter.testcases.DashboardPageTest">
-        <test-method is-config="true" signature="browserConfig()[pri:0, instance:com.rafter.testcases.DashboardPageTest@7205765b]" started-at="2023-02-01T11:48:29 IST" name="browserConfig" finished-at="2023-02-01T11:48:48 IST" duration-ms="18822" status="PASS">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:com.rafter.testcases.DashboardPageTest@58695725]" started-at="2023-02-02T13:35:31 IST" name="browserConfig" finished-at="2023-02-02T13:35:48 IST" duration-ms="16477" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserConfig -->
-        <test-method signature="dashboardLabel()[pri:0, instance:com.rafter.testcases.DashboardPageTest@7205765b]" started-at="2023-02-01T11:48:48 IST" name="dashboardLabel" finished-at="2023-02-01T11:48:58 IST" duration-ms="10043" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h6[text()='Dashboard']"}
-  (Session info: chrome=109.0.5414.75)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8b8a85db8ed4d40b4dc87db708772dbd, findElement {using=xpath, value=//h6[text()='Dashboard']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62321}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62321/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8b8a85db8ed4d40b4dc87db708772dbd]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h6[text()='Dashboard']"}
-  (Session info: chrome=109.0.5414.75)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.6.0', revision: '79f1c02ae20'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8b8a85db8ed4d40b4dc87db708772dbd, findElement {using=xpath, value=//h6[text()='Dashboard']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:62321}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62321/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 8b8a85db8ed4d40b4dc87db708772dbd
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-at com.rafter.pages.DashboardPage.getDashboardLabelPresence(DashboardPage.java:10)
-at com.rafter.testcases.DashboardPageTest.dashboardLabel(DashboardPageTest.java:21)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="dashboardLabel()[pri:0, instance:com.rafter.testcases.DashboardPageTest@58695725]" started-at="2023-02-02T13:35:48 IST" name="dashboardLabel" finished-at="2023-02-02T13:35:51 IST" duration-ms="3605" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dashboardLabel -->
+        <test-method is-config="true" signature="closeBrowserSetup()[pri:0, instance:com.rafter.testcases.DashboardPageTest@58695725]" started-at="2023-02-02T13:35:51 IST" name="closeBrowserSetup" finished-at="2023-02-02T13:35:53 IST" duration-ms="1892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserSetup -->
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:com.rafter.testcases.DashboardPageTest@58695725]" started-at="2023-02-02T13:35:53 IST" name="browserConfig" finished-at="2023-02-02T13:36:05 IST" duration-ms="11839" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="timeAtWorkSectionPresent()[pri:0, instance:com.rafter.testcases.DashboardPageTest@58695725]" started-at="2023-02-02T13:36:05 IST" name="timeAtWorkSectionPresent" finished-at="2023-02-02T13:36:08 IST" duration-ms="3049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- timeAtWorkSectionPresent -->
+        <test-method is-config="true" signature="closeBrowserSetup()[pri:0, instance:com.rafter.testcases.DashboardPageTest@58695725]" started-at="2023-02-02T13:36:08 IST" name="closeBrowserSetup" finished-at="2023-02-02T13:36:09 IST" duration-ms="1204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserSetup -->
       </class> <!-- com.rafter.testcases.DashboardPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.rafter.testcases.LoginPageTest">
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:com.rafter.testcases.LoginPageTest@26e356f0]" started-at="2023-02-02T13:36:09 IST" name="browserConfig" finished-at="2023-02-02T13:36:19 IST" duration-ms="9536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="forgotPasswordTest()[pri:0, instance:com.rafter.testcases.LoginPageTest@26e356f0]" started-at="2023-02-02T13:36:19 IST" name="forgotPasswordTest" finished-at="2023-02-02T13:36:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotPasswordTest -->
+        <test-method is-config="true" signature="closeBrowserSetup()[pri:0, instance:com.rafter.testcases.LoginPageTest@26e356f0]" started-at="2023-02-02T13:36:19 IST" name="closeBrowserSetup" finished-at="2023-02-02T13:36:20 IST" duration-ms="754" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserSetup -->
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:com.rafter.testcases.LoginPageTest@26e356f0]" started-at="2023-02-02T13:36:20 IST" name="browserConfig" finished-at="2023-02-02T13:36:30 IST" duration-ms="10957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="validateLoginTest()[pri:0, instance:com.rafter.testcases.LoginPageTest@26e356f0]" started-at="2023-02-02T13:36:30 IST" name="validateLoginTest" finished-at="2023-02-02T13:36:33 IST" duration-ms="2249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLoginTest -->
+        <test-method is-config="true" signature="closeBrowserSetup()[pri:0, instance:com.rafter.testcases.LoginPageTest@26e356f0]" started-at="2023-02-02T13:36:33 IST" name="closeBrowserSetup" finished-at="2023-02-02T13:36:33 IST" duration-ms="747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserSetup -->
+        <test-method is-config="true" signature="browserConfig()[pri:0, instance:com.rafter.testcases.LoginPageTest@26e356f0]" started-at="2023-02-02T13:36:33 IST" name="browserConfig" finished-at="2023-02-02T13:36:47 IST" duration-ms="13762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserConfig -->
+        <test-method signature="validateTitleTest()[pri:0, instance:com.rafter.testcases.LoginPageTest@26e356f0]" started-at="2023-02-02T13:36:47 IST" name="validateTitleTest" finished-at="2023-02-02T13:36:47 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTitleTest -->
+        <test-method is-config="true" signature="closeBrowserSetup()[pri:0, instance:com.rafter.testcases.LoginPageTest@26e356f0]" started-at="2023-02-02T13:36:47 IST" name="closeBrowserSetup" finished-at="2023-02-02T13:36:48 IST" duration-ms="738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowserSetup -->
+      </class> <!-- com.rafter.testcases.LoginPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

@@ -3,8 +3,10 @@ package com.rafter.testcases;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.rafter.base.ExcelReader;
 import com.rafter.base.RafterBase;
 import com.rafter.pages.LoginPage;
 
@@ -34,7 +36,7 @@ public class LoginPageTest {
 	public void validateLoginTest() {
 		lp.login();
 		String currentUrl = lp.getCurrentUrl();
-		Assert.assertTrue(currentUrl.contains("homepage"));
+		Assert.assertTrue(currentUrl.contains("dashboard"));
 	}
 	
 	@Test
@@ -45,6 +47,12 @@ public class LoginPageTest {
 	@AfterMethod
 	public void closeBrowserSetup() {
 		lp.tearDown();
+	}
+	
+	@DataProvider
+	public Object[][] getUserData() {
+		ExcelReader reader = new ExcelReader("filename", "sheetname");
+		return reader.getData();
 	}
 
 }
