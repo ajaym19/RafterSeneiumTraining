@@ -8,6 +8,9 @@
           <include name="validateLoginTest"/>
           <include name="closeBrowserSetup"/>
           <include name="browserConfig"/>
+          <include name="validateTitleTest"/>
+          <include name="reportSetup"/>
+          <include name="generateReport"/>
         </methods>
       </class> <!-- com.rafter.testcases.LoginPageTest -->
     </classes>
